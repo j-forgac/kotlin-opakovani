@@ -1,10 +1,10 @@
 import java.util.*
 fun main(){
-    val sc = Scanner(System.`in`)
+    val scnr = Scanner(System.`in`)
     var result = 0
     var counter = 1
-    while (sc.hasNext()) {
-        val x = sc.nextInt()
+    while (scnr.hasNext()) {
+        val x = scnr.nextInt()
         if (x % 3 == 0 && counter % 2 == 0) {
             result += x
         }
