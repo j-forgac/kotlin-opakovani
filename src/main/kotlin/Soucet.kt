@@ -1,11 +1,10 @@
 fun main(){
     var result = 0
-    var input = ""
-    for(x in 0..input.length){
+    var input = "12AX3"
+    for(x in 0..input.length-1){
         var num = 0
-        try {
-            num = input.substring(x, x + 1).toInt()
-        } catch (ignored: Exception) {
+        if(input.get(x).isDigit()){
+            num = Character.getNumericValue(input.get(x))
         }
         result += num
     }
